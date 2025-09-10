@@ -1,0 +1,10 @@
+/* Let's override the browser's padding and margin styles. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
