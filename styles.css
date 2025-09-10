@@ -9,4 +9,15 @@ body {
   box-sizing: border-box;
   font-family: "Atkinson Hyperlegible Next", "Inter", "Trebuchet MS",
     "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #f2f0e5;
+  color: #100f0f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
