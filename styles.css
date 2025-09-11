@@ -164,6 +164,11 @@ main.resume-sections {
   row-gap: var(--space-3xl);
 }
 
+.skill-list {
+  display: flex;
+  column-gap: 20px;
+}
+
 /* Footer */
 
 footer.resume-footer {
