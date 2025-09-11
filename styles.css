@@ -47,6 +47,8 @@ body {
     "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-tx);
+  font-size: var(--tx-size-md);
+  line-height: 1.5;
 }
 
 h1,
@@ -56,4 +58,41 @@ h4,
 h5,
 h6 {
   font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h1,
+.text-size-h1 {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: var(--tx-size-3xl);
+}
+
+h2,
+.text-size-h2 {
+  font-size: var(--tx-size-2xl);
+}
+
+h3,
+.text-size-h3 {
+  font-size: var(--tx-size-xl);
+}
+
+h4,
+.text-size-h4 {
+  font-size: var(--tx-size-lg);
+}
+
+h5,
+.text-size-h5 {
+  font-size: var(--tx-size-md);
+  font-weight: 600;
+}
+
+.text-caption {
+  font-size: var(--tx-size-sm);
+}
+
+small,
+.text-small {
+  font-size: var(--tx-size-xs);
 }
