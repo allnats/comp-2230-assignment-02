@@ -97,7 +97,20 @@ small,
   font-size: var(--tx-size-xs);
 }
 
+li {
+  list-style-type: none;
+}
+
 /* Main CSS */
+
+.resume-sidebar img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 50%;
+  border: 2px solid var(--color-tx-3);
+}
 
 /* Grid Layout */
 
@@ -121,4 +134,22 @@ small,
 }
 
 .resume-sidebar {
+}
+
+/* Nav styles */
+
+header.resume-nav {
+  display: flex;
+}
+
+.nav-title {
+  flex-grow: 2;
+}
+
+.nav-links {
+}
+
+.nav-links > ul {
+  display: flex;
+  gap: var(--space-m);
 }
