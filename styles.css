@@ -156,6 +156,14 @@ header.resume-nav {
   gap: var(--space-m);
 }
 
+/* Resume section styles */
+
+main.resume-sections {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-3xl);
+}
+
 /* Footer */
 
 footer.resume-footer {
