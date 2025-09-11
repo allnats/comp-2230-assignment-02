@@ -1,3 +1,30 @@
+/* Declare color scheme, type scaling system, and spacing system here. */
+:root {
+  /* Type scaling system ratio: Perfect fourth */
+  /* Generated it from here: https://baseline.is/tools/type-scale-generator/ */
+  --text-size-xs: 0.56rem;
+  --text-size-sm: 0.75rem;
+  --text-size-md: 1rem;
+  --text-size-lg: 1.33rem;
+  --text-size-xl: 1.78rem;
+  --text-size-2xl: 2.37rem;
+  --text-size-3xl: 3.16rem;
+  --text-size-4xl: 4.21rem;
+  --text-size-5xl: 5.61rem;
+
+  /* Spacing system */
+  /* Got it from here: https://utopia.fyi/space/calculator */
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+}
+
 /* Let's override the browser's padding and margin styles. */
 * {
   margin: 0;
