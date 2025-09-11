@@ -122,6 +122,8 @@ li {
   /* Grid Settings */
   display: grid;
   grid-template-columns: 1fr 1fr 20%;
+  row-gap: var(--space-xl);
+  column-gap: var(--space-s);
 }
 
 .resume-nav,
@@ -152,4 +154,10 @@ header.resume-nav {
 .nav-links > ul {
   display: flex;
   gap: var(--space-m);
+}
+
+/* Footer */
+
+footer.resume-footer {
+  text-align: center;
 }
