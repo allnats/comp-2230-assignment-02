@@ -2,15 +2,15 @@
 :root {
   /* Type scaling system ratio: Perfect fourth */
   /* Generated it from here: https://baseline.is/tools/type-scale-generator/ */
-  --text-size-xs: 0.56rem;
-  --text-size-sm: 0.75rem;
-  --text-size-md: 1rem;
-  --text-size-lg: 1.33rem;
-  --text-size-xl: 1.78rem;
-  --text-size-2xl: 2.37rem;
-  --text-size-3xl: 3.16rem;
-  --text-size-4xl: 4.21rem;
-  --text-size-5xl: 5.61rem;
+  --tx-size-xs: 0.56rem;
+  --tx-size-sm: 0.75rem;
+  --tx-size-md: 1rem;
+  --tx-size-lg: 1.33rem;
+  --tx-size-xl: 1.78rem;
+  --tx-size-2xl: 2.37rem;
+  --tx-size-3xl: 3.16rem;
+  --tx-size-4xl: 4.21rem;
+  --tx-size-5xl: 5.61rem;
 
   /* Spacing system */
   /* Got it from here: https://utopia.fyi/space/calculator */
@@ -23,6 +23,16 @@
   --space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
   --space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
   --space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+  /* Flexoki color scheme */
+  --color-tx: #100f0f;
+  --color-tx-2: #6f6e69;
+  --color-tx-3: #b7b5ac;
+  --color-tx-ui: #e6e4d9;
+  --color-tx-ui-2: #dad8ce;
+  --color-tx-ui-3: #cecdc3;
+  --color-bg: #fffcf0;
+  --color-bg-2: #f2f0e5;
 }
 
 /* Let's override the browser's padding and margin styles. */
@@ -35,8 +45,8 @@
 body {
   font-family: "Atkinson Hyperlegible Next", "Inter", "Trebuchet MS",
     "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #fffcf0;
-  color: #100f0f;
+  background-color: var(--color-bg);
+  color: var(--color-tx);
 }
 
 h1,
