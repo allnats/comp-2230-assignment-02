@@ -26,13 +26,14 @@
 
   /* Flexoki color scheme */
   --color-tx: #100f0f;
-  --color-tx-2: #6f6e69;
+  --color-tx-2: #403e3c;
   --color-tx-3: #b7b5ac;
   --color-tx-ui: #e6e4d9;
   --color-tx-ui-2: #dad8ce;
   --color-tx-ui-3: #cecdc3;
   --color-bg: #fffcf0;
   --color-bg-2: #f2f0e5;
+  --color-or: #bc5215;
 }
 
 /* Let's override the browser's padding and margin styles. */
@@ -164,6 +165,11 @@ main.resume-sections {
   row-gap: var(--space-3xl);
 }
 
+.resume-sections h2 {
+  margin-bottom: var(--space-l);
+  border-bottom: 3px dotted var(--color-tx-ui-2);
+}
+
 .skill-list {
   display: flex;
   column-gap: 20px;
@@ -174,6 +180,7 @@ main.resume-sections {
   flex-direction: column;
   row-gap: var(--space-m);
   font-size: var(--tx-size-lg);
+  color: var(--color-tx-2);
 }
 
 .experience-header {
