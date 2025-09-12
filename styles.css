@@ -154,7 +154,7 @@ li {
   align-items: center;
 
   padding: var(--space-2xs) var(--space-m);
-  background-color: #f2f0e5;
+  background-color: var(--color-bg-2);
   border-bottom: 3px solid var(--color-tx-ui);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -203,11 +203,6 @@ main.resume-sections {
 .resume-sections h2 {
   margin-bottom: var(--space-l);
   border-bottom: 3px dotted var(--color-tx-ui-2);
-}
-
-.skill-list {
-  display: flex;
-  column-gap: 20px;
 }
 
 .experience-list,
@@ -272,5 +267,62 @@ footer.resume-footer {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
+}
+
+/* Tech skill styles */
+
+.skill-list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.tech-skill-group-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: var(--space-s);
+  column-gap: var(--space-m);
+}
+
+#skill-group-webdev {
+  grid-column: 1 / -1;
+}
+
+.tech-skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  /* align-items: center; */
+
+  /* background-color: var(--color-bg-2); */
+  border: 2px solid var(--color-tx-ui);
+  border-radius: 20px;
+}
+
+.tech-skill-group-name {
+  font-family: var(--font-heading);
+  color: var(--color-tx-800);
+  font-size: var(--tx-size-xl);
+  text-align: center;
+  padding: var(--space-xs);
+  border-bottom: 2px dotted var(--color-tx-ui);
+}
+
+.tech-skill-group-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: var(--space-m);
+  padding: var(--space-m);
+}
+
+.tech-skill-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-xs);
+
+  align-items: center;
+}
+
+.tech-skill-icon {
+  width: var(--tx-size-3xl);
 }
