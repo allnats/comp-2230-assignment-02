@@ -169,6 +169,36 @@ main.resume-sections {
   column-gap: 20px;
 }
 
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-m);
+  font-size: var(--tx-size-lg);
+}
+
+.experience-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin-bottom: var(--space-m);
+}
+
+.experience-title {
+  font-weight: 600;
+}
+
+.experience-desc {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--space-s);
+
+  /* Align the bullet points */
+  padding-left: var(--space-s);
+}
+
+.experience-desc li {
+  list-style-type: circle;
+}
+
 /* Footer */
 
 footer.resume-footer {
