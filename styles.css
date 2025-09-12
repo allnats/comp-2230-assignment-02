@@ -2,15 +2,15 @@
 :root {
   /* Type scaling system ratio: Perfect fourth */
   /* Generated it from here: https://baseline.is/tools/type-scale-generator/ */
-  --tx-size-xs: 0.56rem;
-  --tx-size-sm: 0.75rem;
+  --tx-size-xs: 0.64rem;
+  --tx-size-sm: 0.8rem;
   --tx-size-md: 1rem;
-  --tx-size-lg: 1.33rem;
-  --tx-size-xl: 1.78rem;
-  --tx-size-2xl: 2.37rem;
-  --tx-size-3xl: 3.16rem;
-  --tx-size-4xl: 4.21rem;
-  --tx-size-5xl: 5.61rem;
+  --tx-size-lg: 1.25rem;
+  --tx-size-xl: 1.56rem;
+  --tx-size-2xl: 1.95rem;
+  --tx-size-3xl: 2.44rem;
+  --tx-size-4xl: 3.05rem;
+  --tx-size-5xl: 3.81rem;
 
   /* Spacing system */
   /* Got it from here: https://utopia.fyi/space/calculator */
