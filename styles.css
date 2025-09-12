@@ -175,7 +175,8 @@ main.resume-sections {
   column-gap: 20px;
 }
 
-.experience-list {
+.experience-list,
+.education-list {
   display: flex;
   flex-direction: column;
   row-gap: var(--space-m);
@@ -183,17 +184,25 @@ main.resume-sections {
   color: var(--color-tx-2);
 }
 
-.experience-header {
+.experience-header,
+.education-header {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-bottom: var(--space-m);
 }
 
-.experience-title {
+.experience-title,
+.education-title {
   font-weight: 600;
 }
 
-.experience-desc {
+.experience-period,
+.education-period {
+  font-size: var(--tx-size-xl);
+}
+
+.experience-desc,
+.education-desc {
   display: flex;
   flex-direction: column;
   row-gap: var(--space-s);
@@ -202,7 +211,8 @@ main.resume-sections {
   padding-left: var(--space-s);
 }
 
-.experience-desc li {
+.experience-desc li,
+.education-desc li {
   list-style-type: circle;
 }
 
