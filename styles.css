@@ -215,8 +215,17 @@ main.resume-sections {
   list-style-type: circle;
 }
 
+.experience-desc li::marker,
+.education-desc li::marker {
+  font-size: var(--tx-size-xl);
+}
+
 /* Footer */
 
 footer.resume-footer {
   text-align: center;
+}
+
+.display-none {
+  display: none;
 }
