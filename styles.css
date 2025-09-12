@@ -34,6 +34,9 @@
   --color-bg: #fffcf0;
   --color-bg-2: #f2f0e5;
   --color-or: #bc5215;
+
+  /* Fonts */
+  --font-heading: "Inter", Arial, Helvetica, sans-serif;
 }
 
 /* Let's override the browser's padding and margin styles. */
@@ -58,7 +61,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: var(--font-heading);
 }
 
 h1,
@@ -168,6 +171,10 @@ main.resume-sections {
   row-gap: var(--space-3xl);
 }
 
+.section-icon {
+  margin-right: var(--space-s);
+}
+
 .resume-sections h2 {
   margin-bottom: var(--space-l);
   border-bottom: 3px dotted var(--color-tx-ui-2);
@@ -179,7 +186,8 @@ main.resume-sections {
 }
 
 .experience-list,
-.education-list {
+.education-list,
+.certification-list {
   display: flex;
   flex-direction: column;
   row-gap: var(--space-m);
@@ -187,16 +195,27 @@ main.resume-sections {
   color: var(--color-tx-2);
 }
 
+.certification-list {
+  row-gap: var(--space-s);
+}
+
 .experience-header,
 .education-header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: end;
-  margin-bottom: var(--space-m);
+  margin-bottom: var(--space-xs);
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-heading);
 }
 
 .experience-title,
-.education-title {
+.education-title,
+.certification-title {
   font-weight: 600;
 }
 
@@ -216,7 +235,8 @@ main.resume-sections {
 }
 
 .experience-desc li::marker,
-.education-desc li::marker {
+.education-desc li::marker,
+.certification-list li::marker {
   font-size: var(--tx-size-xl);
 }
 
