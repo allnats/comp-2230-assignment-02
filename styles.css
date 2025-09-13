@@ -155,7 +155,7 @@ li {
 }
 
 .contact-list li {
-  border: 2px solid var(--color-tx-ui);
+  border: 3px solid var(--color-tx-ui);
   border-radius: var(--tx-size-xs);
   padding: var(--space-2xs);
   cursor: pointer;
@@ -168,7 +168,7 @@ li {
 }
 
 .contact-list li:hover {
-  border: 2px solid var(--color-tx-ui-2);
+  border: 3px solid var(--color-tx-ui-2);
 }
 
 .contact-list li:hover svg {
@@ -191,6 +191,20 @@ li {
   grid-template-columns: minmax(0, 700px) 4fr;
   row-gap: var(--space-xl);
   column-gap: var(--space-xl);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+}
+
+.section-icon,
+.section-title {
+  display: block;
+}
+
+svg.section-icon {
+  width: var(--tx-size-2xl);
 }
 
 .resume-nav,
