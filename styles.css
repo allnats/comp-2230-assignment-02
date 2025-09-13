@@ -36,7 +36,7 @@
   /* Flexoki color scheme */
   --color-tx: #100f0f;
   --color-tx-800: #403e3c;
-  --color-tx-600: ##6f6e69;
+  --color-tx-600: #6f6e69;
   --color-tx-300: #b7b5ac;
   --color-tx-ui: #e6e4d9;
   --color-tx-ui-2: #dad8ce;
@@ -313,6 +313,11 @@ main.resume-sections {
 .resume-sections h2 {
   margin-bottom: var(--space-l);
   border-bottom: 3px dotted var(--color-tx-ui-2);
+  transition: border 250ms;
+}
+
+main section:hover h2 {
+  border-bottom: 3px dotted var(--color-tx-600);
 }
 
 .experience-list,
@@ -431,6 +436,12 @@ footer.resume-footer {
   /* background-color: var(--color-bg-2); */
   border: 2px solid var(--color-tx-ui);
   border-radius: 20px;
+
+  transition: border 250ms;
+}
+
+.tech-skill-group:hover {
+  border: 2px solid var(--color-tx-600);
 }
 
 .tech-skill-group-name {
