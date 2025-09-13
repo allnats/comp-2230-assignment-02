@@ -110,11 +110,29 @@ li {
 /* Main CSS */
 
 .resume-sidebar {
+  align-self: start;
+  /* background-color: var(--color-bg-2);
+  border-radius: var(--tx-size-xl);
+  border-bottom: 3px solid var(--color-tx-ui); */
+
+  position: sticky;
+  top: var(--space-m);
+
   display: flex;
   flex-direction: column;
   gap: var(--space-xs);
   align-items: center;
   padding: var(--space-l);
+}
+
+.resume-sidebar img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+
+  border-radius: 50%;
+  border: 3px solid var(--color-tx-300);
 }
 
 .resume-sidebar .author-name {
@@ -159,16 +177,6 @@ li {
 
 .contact-list .contact-icons {
   width: var(--tx-size-3xl);
-}
-
-.resume-sidebar img {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-
-  border-radius: 50%;
-  border: 3px solid var(--color-tx-300);
 }
 
 /* Grid Layout */
