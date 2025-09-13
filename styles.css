@@ -12,6 +12,15 @@
   --tx-size-4xl: 3.05rem;
   --tx-size-5xl: 3.81rem;
 
+  /* New clamp text system */
+  --tx-size-xs: clamp(0.6076rem, 0.5944rem + 0.0588vw, 0.64rem);
+  --tx-size-sm: clamp(0.7292rem, 0.7002rem + 0.1288vw, 0.8rem);
+  --tx-size-md: clamp(0.875rem, 0.8239rem + 0.2273vw, 1rem);
+  --tx-size-lg: clamp(1.05rem, 0.9682rem + 0.3636vw, 1.25rem);
+  --tx-size-xl: clamp(1.26rem, 1.1363rem + 0.55vw, 1.5625rem);
+  --tx-size-2xl: clamp(1.512rem, 1.3315rem + 0.802vw, 1.9531rem);
+  --tx-size-3xl: clamp(1.8144rem, 1.5579rem + 1.14vw, 2.4414rem);
+
   /* Spacing system */
   /* Got it from here: https://utopia.fyi/space/calculator */
   --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
