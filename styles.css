@@ -109,6 +109,58 @@ li {
 
 /* Main CSS */
 
+.resume-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  align-items: center;
+  padding: var(--space-l);
+}
+
+.resume-sidebar .author-name {
+  font-size: var(--tx-size-xl);
+  text-align: center;
+}
+
+.resume-sidebar .author-subtitle {
+  text-align: center;
+  line-height: var(--space-xs);
+  color: var(--color-tx-800);
+
+  border-bottom: 3px dotted var(--color-tx-ui);
+  padding-bottom: var(--space-m);
+}
+
+.resume-sidebar .contact-list {
+  display: flex;
+  gap: var(--space-s);
+}
+
+.contact-list li {
+  border: 2px solid var(--color-tx-ui);
+  border-radius: var(--tx-size-xs);
+  padding: var(--space-2xs);
+  cursor: pointer;
+
+  transition: border 100ms;
+}
+
+.contact-list svg {
+  transition: stroke-width 250ms;
+}
+
+.contact-list li:hover {
+  border: 2px solid var(--color-tx-ui-2);
+}
+
+.contact-list li:hover svg {
+  stroke-width: 2;
+}
+
+.contact-list .contact-icons {
+  width: var(--tx-size-3xl);
+}
+
 .resume-sidebar img {
   display: block;
   width: 100%;
@@ -116,7 +168,7 @@ li {
   height: auto;
 
   border-radius: 50%;
-  border: 2px solid var(--color-tx-300);
+  border: 3px solid var(--color-tx-300);
 }
 
 /* Grid Layout */
@@ -128,7 +180,7 @@ li {
 
   /* Grid Settings */
   display: grid;
-  grid-template-columns: minmax(0, 700px) 2fr;
+  grid-template-columns: minmax(0, 700px) 4fr;
   row-gap: var(--space-xl);
   column-gap: var(--space-xl);
 }
@@ -140,11 +192,6 @@ li {
 
 .resume-sections {
   grid-column: 1 / 2;
-}
-
-.resume-sidebar {
-  padding: var(--space-xl);
-  justify-self: center;
 }
 
 /* Nav styles */
