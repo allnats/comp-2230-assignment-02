@@ -48,6 +48,14 @@
 
   /* Fonts */
   --font-heading: "Inter", Arial, Helvetica, sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
 }
 
 /* Let's override the browser's padding and margin styles. */
