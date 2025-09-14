@@ -348,6 +348,25 @@ main section:hover h2 {
   margin-bottom: var(--space-xs);
 }
 
+.education-location a,
+.experience-location a {
+  color: var(--color-tx-600);
+  text-decoration: underline solid 1px;
+}
+
+.certification-title a {
+  color: inherit;
+  text-decoration: underline dotted 2px var(--color-tx-ui-3);
+  transition: color 250ms, text-decoration-color 250ms;
+}
+
+.education-location a:hover,
+.experience-location a:hover,
+.certification-title a:hover {
+  color: var(--color-cy);
+  text-decoration-color: var(--color-cy);
+}
+
 @container section-item-headers (max-width: 40ch) {
   .education-header,
   .experience-header {
@@ -440,10 +459,6 @@ footer.resume-footer {
   transition: border 250ms;
 }
 
-.tech-skill-group:hover {
-  border: 2px solid var(--color-tx-600);
-}
-
 .tech-skill-group-name {
   font-family: var(--font-heading);
   color: var(--color-tx-800);
@@ -451,6 +466,15 @@ footer.resume-footer {
   text-align: center;
   padding: var(--space-xs);
   border-bottom: 2px dotted var(--color-tx-ui);
+  transition: border 250ms;
+}
+
+.tech-skill-group:hover {
+  border: 2px solid var(--color-tx-ui-3);
+}
+
+.tech-skill-group:hover .tech-skill-group-name {
+  border-bottom: 2px dotted var(--color-tx-ui-3);
 }
 
 .tech-skill-group-items {
