@@ -435,11 +435,22 @@ footer.resume-footer {
   column-gap: 20px;
 }
 
+#skills {
+  container-type: inline-size;
+  container-name: tech-container;
+}
+
 .tech-skill-group-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: var(--space-s);
   column-gap: var(--space-m);
+}
+
+@container tech-container (max-width: 450px) {
+  .tech-skill-group-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 #skill-group-webdev {
@@ -455,6 +466,9 @@ footer.resume-footer {
   /* background-color: var(--color-bg-2); */
   border: 2px solid var(--color-tx-ui);
   border-radius: 20px;
+
+  container-type: inline-size;
+  container-name: tech-group-items;
 
   transition: border 250ms;
 }
@@ -482,6 +496,12 @@ footer.resume-footer {
   grid-template-columns: repeat(3, 1fr);
   row-gap: var(--space-m);
   padding: var(--space-m);
+}
+
+@container tech-group-items (max-width: 30ch) {
+  .tech-skill-group-items {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .tech-skill-item {
