@@ -2,15 +2,6 @@
 :root {
   /* Type scaling system ratio: Perfect fourth */
   /* Generated it from here: https://baseline.is/tools/type-scale-generator/ */
-  --tx-size-xs: 0.64rem;
-  --tx-size-sm: 0.8rem;
-  --tx-size-md: 1rem;
-  --tx-size-lg: 1.25rem;
-  --tx-size-xl: 1.56rem;
-  --tx-size-2xl: 1.95rem;
-  --tx-size-3xl: 2.44rem;
-  --tx-size-4xl: 3.05rem;
-  --tx-size-5xl: 3.81rem;
 
   /* New clamp text system */
   --tx-size-xs: clamp(0.6076rem, 0.5944rem + 0.0588vw, 0.64rem);
@@ -50,12 +41,6 @@
   --font-heading: "Inter", Arial, Helvetica, sans-serif;
 
   scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :root {
-    scroll-behavior: auto;
-  }
 }
 
 /* Let's override the browser's padding and margin styles. */
@@ -149,22 +134,6 @@ li {
   grid-column: 1 / 2;
 }
 
-@media (width < 1024px) {
-  .container {
-    width: 90%;
-  }
-}
-
-@media (width < 768px) {
-  .container {
-    grid-template-columns: minmax(0, 700px);
-  }
-
-  .resume-sidebar {
-    grid-row-start: 2;
-  }
-}
-
 .section-header {
   display: flex;
   align-items: center;
@@ -219,13 +188,6 @@ svg.section-icon {
   gap: var(--space-xs);
   align-items: center;
   padding: var(--space-l);
-}
-
-@media (width < 768px) {
-  .resume-sidebar {
-    position: static;
-    padding: var(--space-s);
-  }
 }
 
 .resume-sidebar img {
@@ -309,12 +271,6 @@ svg.section-icon {
   background-color: var(--color-tx-ui);
 }
 
-@media (width < 768px) {
-  .resume-sidebar .nav-list {
-    display: none;
-  }
-}
-
 /* Resume section styles */
 
 main.resume-sections {
@@ -384,13 +340,6 @@ main section:hover h2 {
   text-decoration-color: var(--color-cy);
 }
 
-@container section-item-headers (max-width: 40ch) {
-  .education-header,
-  .experience-header {
-    grid-template-columns: 1fr;
-  }
-}
-
 .certification-item {
   container-type: inline-size;
   container-name: certification-item;
@@ -400,12 +349,6 @@ main section:hover h2 {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-heading);
-}
-
-@container certification-item (max-width: 40ch) {
-  .certification-header {
-    flex-direction: column;
-  }
 }
 
 .experience-title,
@@ -454,12 +397,6 @@ main section:hover h2 {
   column-gap: var(--space-m);
 }
 
-@container tech-container (max-width: 450px) {
-  .tech-skill-group-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 #skill-group-webdev {
   grid-column: 1 / -1;
 }
@@ -505,12 +442,6 @@ main section:hover h2 {
   padding: var(--space-m);
 }
 
-@container tech-group-items (max-width: 25ch) {
-  .tech-skill-group-items {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .tech-skill-item {
   display: flex;
   flex-direction: column;
@@ -535,4 +466,60 @@ footer.resume-footer {
 
 .display-none {
   display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
+
+@media (width < 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (width < 768px) {
+  /* Remove the sidebar */
+  .container {
+    grid-template-columns: minmax(0, 700px);
+  }
+
+  /* Make the sidebar static that starts after the header. */
+  .resume-sidebar {
+    position: static;
+    padding: var(--space-s);
+    grid-row-start: 2;
+  }
+
+  /* Hide the navigation in the sidebar */
+  .resume-sidebar .nav-list {
+    display: none;
+  }
+}
+
+@container section-item-headers (max-width: 40ch) {
+  .education-header,
+  .experience-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+@container certification-item (max-width: 40ch) {
+  .certification-header {
+    flex-direction: column;
+  }
+}
+
+@container tech-container (max-width: 450px) {
+  .tech-skill-group-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@container tech-group-items (max-width: 25ch) {
+  .tech-skill-group-items {
+    grid-template-columns: 1fr 1fr;
+  }
 }
