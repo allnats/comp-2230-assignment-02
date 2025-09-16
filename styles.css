@@ -309,6 +309,12 @@ svg.section-icon {
   background-color: var(--color-tx-ui);
 }
 
+@media (width < 768px) {
+  .resume-sidebar .nav-list {
+    display: none;
+  }
+}
+
 /* Resume section styles */
 
 main.resume-sections {
