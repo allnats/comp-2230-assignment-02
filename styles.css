@@ -418,16 +418,6 @@ main section:hover h2 {
   font-size: var(--tx-size-xl);
 }
 
-/* Footer */
-
-footer.resume-footer {
-  text-align: center;
-}
-
-.display-none {
-  display: none !important;
-}
-
 /* Tech skill styles */
 
 .skill-list {
@@ -514,4 +504,18 @@ footer.resume-footer {
 
 .tech-skill-icon {
   width: var(--tx-size-3xl);
+}
+
+/* Footer */
+
+footer {
+  padding: var(--space-s);
+}
+
+footer.resume-footer {
+  text-align: center;
+}
+
+.display-none {
+  display: none !important;
 }
