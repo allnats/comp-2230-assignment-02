@@ -140,7 +140,7 @@ li {
   column-gap: var(--space-xl);
 }
 
-.resume-nav,
+.resume-header,
 .resume-footer {
   grid-column: 1 / -1;
 }
@@ -181,7 +181,7 @@ svg.section-icon {
 
 /* Nav styles */
 
-.resume-nav {
+.resume-header {
   display: flex;
   align-items: center;
 
@@ -195,12 +195,12 @@ svg.section-icon {
   font-size: var(--tx-size-lg);
 }
 
-.nav-title {
+.resume-header-title {
   flex-grow: 2;
   /* font-size: var(--tx-size-l); */
 }
 
-.nav-title span {
+.resume-header-title span {
   color: var(--color-tx-600);
 }
 
@@ -499,7 +499,7 @@ main section:hover h2 {
   padding: var(--space-m);
 }
 
-@container tech-group-items (max-width: 20ch) {
+@container tech-group-items (max-width: 25ch) {
   .tech-skill-group-items {
     grid-template-columns: 1fr 1fr;
   }
