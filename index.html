@@ -24,6 +24,7 @@
 
     <title>Resume - Allendale Nato</title>
   </head>
+
   <body>
     <div class="container">
       <!-- Introduction -->
@@ -31,7 +32,7 @@
         <div class="resume-header-title">
           <h1>Allendale <span>/ Resume</span></h1>
         </div>
-        <nav class="resume-header-nav">
+        <nav class="resume-header-nav" role="navigation">
           <p><a href="">Home</a></p>
           <p><a href="">Projects</a></p>
         </nav>
@@ -39,8 +40,7 @@
 
       <!-- Main resume sections/content -->
       <main class="resume-sections">
-        <!-- SVG Source: https://heroicons.com -->
-
+        <!-- SVG Source: https://lucide.dev/ -->
         <section class="education" id="education">
           <h2 class="section-header">
             <svg
@@ -503,7 +503,7 @@
       </main>
 
       <!-- Sidebar -->
-      <aside class="resume-sidebar">
+      <aside class="resume-sidebar" role="complementary" aria-label="Sidebar">
         <img
           class="profile-picture"
           width="300"
@@ -582,7 +582,7 @@
           </li>
         </ul>
 
-        <nav class="nav-list">
+        <nav class="nav-list" role="navigation" aria-label="Sidebar navigation">
           <p class="nav-list-item"><a href="#education">Education</a></p>
           <p class="nav-list-item"><a href="#experience">Experience</a></p>
           <p class="nav-list-item">
@@ -625,7 +625,7 @@
       </aside>
 
       <!-- Contact info and copyrights -->
-      <footer class="resume-footer">
+      <footer class="resume-footer" role="contentinfo">
         <p>
           &copy; 2025 Allendale Nato &mdash; Built with code, love, & coffee.
         </p>
