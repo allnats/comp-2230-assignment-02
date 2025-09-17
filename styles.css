@@ -39,6 +39,8 @@
 
   /* Fonts */
   --font-heading: "Inter", Arial, Helvetica, sans-serif;
+  --font-body: "Atkinson Hyperlegible Next", "Inter", "Trebuchet MS",
+    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 
   scroll-behavior: smooth;
 }
@@ -51,8 +53,7 @@
 }
 
 body {
-  font-family: "Atkinson Hyperlegible Next", "Inter", "Trebuchet MS",
-    "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-tx);
   font-size: var(--tx-size-md);
@@ -68,32 +69,26 @@ h6 {
   font-family: var(--font-heading);
 }
 
-h1,
-.text-size-h1 {
+h1 {
   font-weight: 700;
   margin-top: 0;
   font-size: var(--tx-size-3xl);
 }
 
-h2,
-.text-size-h2 {
+h2 {
   font-size: var(--tx-size-2xl);
 }
 
-h3,
-.text-size-h3 {
+h3 {
   font-size: var(--tx-size-xl);
 }
 
-h4,
-.text-size-h4 {
+h4 {
   font-size: var(--tx-size-lg);
 }
 
-h5,
-.text-size-h5 {
+h5 {
   font-size: var(--tx-size-md);
-  font-weight: 600;
 }
 
 .text-caption {
@@ -148,7 +143,7 @@ svg.section-icon {
   width: var(--tx-size-2xl);
 }
 
-/* Nav styles */
+/* Header Styles */
 
 .resume-header {
   display: flex;
@@ -173,12 +168,12 @@ svg.section-icon {
   color: var(--color-tx-600);
 }
 
-/* Sidebar Styles */
+/* End of Header Styles */
+
+/* Sidebar Styles (Layout: Flex Column) */
+
 .resume-sidebar {
   align-self: start;
-  /* background-color: var(--color-bg-2);
-  border-radius: var(--tx-size-xl);
-  border-bottom: 3px solid var(--color-tx-ui); */
 
   position: sticky;
   top: var(--space-m);
@@ -210,9 +205,10 @@ svg.section-icon {
   line-height: var(--space-xs);
   color: var(--color-tx-800);
 
-  /* border-bottom: 3px dotted var(--color-tx-ui); */
   padding-bottom: var(--space-m);
 }
+
+/* Sidebar Contact List (Layout: Flex) */
 
 .resume-sidebar .contact-list {
   display: flex;
@@ -271,7 +267,9 @@ svg.section-icon {
   background-color: var(--color-tx-ui);
 }
 
-/* Resume section styles */
+/* End of Sidebar Styles */
+
+/* Resume section styles (Layout: Flex) */
 
 main.resume-sections {
   display: flex;
@@ -385,7 +383,7 @@ main section:hover h2 {
   column-gap: 20px;
 }
 
-#skills {
+section#skills {
   container-type: inline-size;
   container-name: tech-container;
 }
@@ -397,7 +395,7 @@ main section:hover h2 {
   column-gap: var(--space-m);
 }
 
-#skill-group-webdev {
+div#skill-group-webdev {
   grid-column: 1 / -1;
 }
 
@@ -454,6 +452,8 @@ main section:hover h2 {
   width: var(--tx-size-3xl);
 }
 
+/* End of Resume Section Styles */
+
 /* Footer */
 
 footer {
@@ -467,6 +467,10 @@ footer.resume-footer {
 .display-none {
   display: none !important;
 }
+
+/* End of Footer Styles */
+
+/* Media & Container Queries */
 
 @media (prefers-reduced-motion: reduce) {
   :root {
