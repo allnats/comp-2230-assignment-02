@@ -168,9 +168,12 @@ svg.section-icon {
   font-size: var(--tx-size-xl);
 }
 
-.resume-header-title span,
-.resume-header-nav a {
+.resume-header-title span {
   color: var(--color-tx-600);
+}
+
+.resume-header-nav a {
+  color: var(--color-tx-800);
 }
 
 .resume-header-nav {
