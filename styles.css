@@ -161,11 +161,31 @@ svg.section-icon {
 
 .resume-header-title {
   flex-grow: 2;
+}
+
+.resume-header-title h1 {
+  display: inline-block;
+  font-size: var(--tx-size-xl);
+}
+
+.resume-header-title span,
+.resume-header-nav a {
+  color: var(--color-tx-600);
+}
+
+.resume-header-nav {
+  display: flex;
+  gap: var(--space-m);
+}
+
+.resume-header-nav a {
+  text-decoration: none;
   /* font-size: var(--tx-size-l); */
 }
 
-.resume-header-title span {
-  color: var(--color-tx-600);
+.resume-header-nav a:hover {
+  color: var(--color-cy);
+  text-decoration: underline dotted var(--color-cy) 2px;
 }
 
 /* End of Header Styles */
