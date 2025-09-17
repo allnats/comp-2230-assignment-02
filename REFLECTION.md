@@ -49,6 +49,16 @@ I found that figuring out and testing the correct layout with either CSS Grid or
 
 ## 4. What would I do differently now?
 
-Looking back, I realized it would have been more efficient to adopt a **mobile-first approach** from the beginning, building the layout for smaller screens first and then progressively scaling up.
+**Start from mobile first**
 
-In addition, it would have been much more efficient to use a prototyping tool like Figma to visualize and plan the layout before I started coding.
+Looking back, I realized it would have been more efficient to adopt a **mobile-first approach** from the beginning, building the layout for mobile screens first and then progressively scaling up to larger, desktop screens.
+
+Working my way down to a smaller screen with media queries was difficult. It feels as if I'm creating a new layout for each breakpoints. In contrast, I think scaling my layout up would just be matter of filling up the empty space by making some small tweaks in my existing layout.
+
+**Use prototyping tools like Figma**
+
+In addition, it would have been much more efficient to use a prototyping tool like Figma to visualize and plan the layout before I started coding it in. My rough wireframe sketch did help and establish the foundational layout of my resume, but when it comes to experimenting and testing new layouts it was time-consuming. I think it would be better to experiment in visual prototyping tools like Figma.
+
+**Break my `CSS` file?**
+
+Maybe I should break apart my `css` file into two parts: a base file and style file. The base will contain rules for CSS reset and custom properties for my color scheme, type, and spacing systems. The style file will then contain styling rules for my webpage. I noticed that the reset, color, and spacing rules took up a huge portion of my css file making it harder for me to navigate specific webpage rules.
