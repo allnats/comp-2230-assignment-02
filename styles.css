@@ -176,7 +176,7 @@ svg.section-icon {
   color: var(--color-tx-800);
 }
 
-.resume-header-nav {
+.resume-header-nav ul {
   display: flex;
   gap: var(--space-m);
 }
